@@ -27,7 +27,7 @@ const Elixirs: React.FC = () => {
         if (value) params.append(key, value); // Add only non-empty values
       });
 
-      const response = await fetch(`${API_BASE_URL}?${params.toString()}`);
+      const response = await fetch(`${API_BASE_URL}/elixirs?${params.toString()}`);
       if (!response.ok) {
         throw new Error('Failed to fetch elixirs');
       }
