@@ -1,9 +1,10 @@
 import './App.css'
+import Elixirs from './pages/Elixirs'
 
 function App() {
   return (
     <>
-      <div>Harry Potter Wizard App</div>
+      <Elixirs />
     </>
   )
 }
